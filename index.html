@@ -1,1 +1,251 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TOP TAG | Official Website</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Inter:wght@400;500;700;900&display=swap');
+
+:root {
+  --bg: #090711;
+  --panel: #151122;
+  --purple: #9b5cff;
+  --light: #c7a5ff;
+  --text: #fff;
+  --muted: #aaa1bd;
+}
+* {box-sizing:border-box;margin:0;padding:0}
+html {scroll-behavior:smooth}
+body {
+  background:radial-gradient(ellipse at 50% 0%,#291749 0%,#090711 55%);
+  color:var(--text);
+  font-family:Inter,sans-serif;
+  min-height:100vh;
+}
+header {
+  height:75px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding:0 7%;
+  background:#090711d9;
+  border-bottom:1px solid #ffffff12;
+  position:sticky;
+  top:0;
+  z-index:10;
+  backdrop-filter:blur(15px);
+}
+.logo {
+  font-family:Orbitron,sans-serif;
+  font-size:25px;
+  font-weight:900;
+  letter-spacing:3px;
+}
+.logo span {color:var(--purple)}
+nav {display:flex;gap:25px}
+nav a {
+  text-decoration:none;
+  color:#c9c2d6;
+  font-size:13px;
+  font-weight:700;
+  transition:.2s;
+}
+nav a:hover {color:var(--purple)}
+.hero {
+  min-height:650px;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  padding:80px 20px;
+}
+.tag {
+  color:var(--light);
+  background:#9b5cff20;
+  border:1px solid #9b5cff55;
+  padding:9px 17px;
+  border-radius:30px;
+  font-size:11px;
+  letter-spacing:2px;
+  margin-bottom:25px;
+}
+.hero h1 {
+  font-family:Orbitron,sans-serif;
+  font-size:clamp(55px,10vw,110px);
+  font-weight:900;
+  letter-spacing:7px;
+  text-shadow:0 0 40px #9b5cff80;
+}
+.hero h1 span {color:var(--purple)}
+.hero p {
+  color:var(--muted);
+  max-width:550px;
+  line-height:1.8;
+  margin:20px 0 30px;
+}
+.buttons {display:flex;gap:15px;flex-wrap:wrap;justify-content:center}
+.btn {
+  padding:15px 25px;
+  border-radius:9px;
+  text-decoration:none;
+  font-weight:900;
+  font-size:13px;
+  transition:.2s;
+}
+.primary {background:var(--purple);color:white;box-shadow:0 0 25px #9b5cff55}
+.secondary {border:1px solid #ffffff35;color:white}
+.btn:hover {transform:translateY(-4px)}
+section {padding:85px 7%}
+.section-title {
+  text-align:center;
+  font-family:Orbitron,sans-serif;
+  font-size:30px;
+  margin-bottom:12px;
+}
+.section-desc {
+  text-align:center;
+  color:var(--muted);
+  margin-bottom:40px;
+}
+.cards {
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:20px;
+  max-width:1100px;
+  margin:auto;
+}
+.card {
+  background:linear-gradient(145deg,#1d1630,#100d19);
+  border:1px solid #ffffff12;
+  border-radius:15px;
+  padding:28px;
+  transition:.25s;
+}
+.card:hover {transform:translateY(-7px);border-color:#9b5cff80}
+.card .icon {font-size:30px;margin-bottom:18px}
+.card h3 {font-size:18px;margin-bottom:12px}
+.card p {color:var(--muted);font-size:13px;line-height:1.7}
+.download {
+  max-width:850px;
+  margin:auto;
+  padding:55px 25px;
+  background:linear-gradient(130deg,#281746,#151020);
+  border:1px solid #9b5cff55;
+  border-radius:20px;
+  text-align:center;
+}
+.download h2 {font-family:Orbitron,sans-serif;font-size:30px;margin-bottom:15px}
+.download p {color:var(--muted);margin-bottom:25px;line-height:1.7}
+footer {
+  border-top:1px solid #ffffff12;
+  padding:30px 7%;
+  text-align:center;
+  color:#817990;
+  font-size:12px;
+}
+footer span {color:var(--purple)}
+@media(max-width:700px) {
+  header {height:auto;min-height:70px;flex-wrap:wrap;padding:18px 5%;gap:15px}
+  nav {gap:14px;flex-wrap:wrap}
+  nav a {font-size:11px}
+  .hero {min-height:550px}
+  section {padding:65px 5%}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo">TOP<span>TAG</span></div>
+  <nav>
+    <a href="#home">HOME</a>
+    <a href="#features">FEATURES</a>
+    <a href="#download">DOWNLOAD</a>
+    <a href="#updates">UPDATES</a>
+    <a href="#discord">DISCORD</a>
+  </nav>
+</header>
+
+<main>
+<section class="hero" id="home">
+  <div class="tag">THE NEXT VR TAGGING EXPERIENCE</div>
+  <h1>TOP<span>TAG</span></h1>
+  <p>Run, climb, swing and tag your friends in an exciting VR multiplayer experience. Are you fast enough to survive?</p>
+  <div class="buttons">
+    <a class="btn primary" href="#download">DOWNLOAD THE GAME</a>
+    <a class="btn secondary" href="#discord">JOIN DISCORD</a>
+  </div>
+</section>
+
+<section id="features">
+  <h2 class="section-title">GAME FEATURES</h2>
+  <p class="section-desc">Everything you need for an awesome experience.</p>
+  <div class="cards">
+    <div class="card">
+      <div class="icon">🎮</div>
+      <h3>VR Multiplayer</h3>
+      <p>Meet players, join rooms and play together with friends.</p>
+    </div>
+    <div class="card">
+      <div class="icon">🏃</div>
+      <h3>Movement</h3>
+      <p>Move around the map and master your movement skills.</p>
+    </div>
+    <div class="card">
+      <div class="icon">🌎</div>
+      <h3>Explore</h3>
+      <p>Discover maps and enjoy different places to play.</p>
+    </div>
+    <div class="card">
+      <div class="icon">🏆</div>
+      <h3>Community</h3>
+      <p>Meet other players and become part of Top Tag.</p>
+    </div>
+  </div>
+</section>
+
+<section id="download">
+  <div class="download">
+    <h2>READY TO PLAY?</h2>
+    <p>Get ready to jump into Top Tag. Download information will be available here.</p>
+    <a class="btn primary" href="#" onclick="alert('Game download coming soon!');return false;">DOWNLOAD SOON</a>
+  </div>
+</section>
+
+<section id="updates">
+  <h2 class="section-title">LATEST UPDATES</h2>
+  <p class="section-desc">Stay updated with everything happening in Top Tag.</p>
+  <div class="cards">
+    <div class="card">
+      <div class="icon">🚀</div>
+      <h3>Website Launch</h3>
+      <p>The official Top Tag website is now being created.</p>
+    </div>
+    <div class="card">
+      <div class="icon">🔧</div>
+      <h3>More Coming Soon</h3>
+      <p>New announcements and game updates will appear here.</p>
+    </div>
+  </div>
+</section>
+
+<section id="discord">
+  <div class="download">
+    <h2>JOIN THE COMMUNITY</h2>
+    <p>Join the official Top Tag Discord to meet players and get the latest announcements.</p>
+    <a class="btn primary" href="https://discord.gg/PMCedQskaK" target="_blank" rel="noopener noreferrer">JOIN DISCORD</a>
+  </div>
+</section>
+</main>
+
+<footer>
+  © 2026 <span>TOP TAG</span>. All rights reserved.
+  <p style="margin-top:9px">Made with care by the Top Tag team.</p>
+</footer>
+
+</body>
+</html>
+
